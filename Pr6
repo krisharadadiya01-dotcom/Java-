@@ -1,0 +1,27 @@
+class pr6 {
+    double width = 1;
+    double height = 1;
+
+    Rectangle() {
+    }
+
+    Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    double getArea() {
+        return width * height;
+    }
+
+    double getPerimeter() {
+        return 2 * (width + height);
+    }
+}
+//output
+//Rectangle 1:
+//Area: 1.0
+//Perimeter: 4.0
+//Rectangle 2:
+//Area: 20.0
+//Perimeter: 18.0
