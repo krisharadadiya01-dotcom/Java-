@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+class Employee {
+    private String employeeName;
+    private double employeeSalary;
+
+    public void readEmployeeData() {
+        Scanner sc = new Scanner(System.in);
+        employeeName = sc.nextLine();
+        employeeSalary = sc.nextDouble();
+    }
+
+    public void displayEmployeeData() {
+        System.out.println("Name: " + employeeName);
+        System.out.println("Salary: " + employeeSalary);
+    }
+}
+
+class pr7 {
+    public static void main(String[] args) {
+        Employee e = new Employee();
+        e.readEmployeeData();
+        e.displayEmployeeData();
+    }
+}
+//output
+//Input:
+//Krisha
+//25000
+
+//Output:
+//Name: Krisha
+//Salary: 25000.0
